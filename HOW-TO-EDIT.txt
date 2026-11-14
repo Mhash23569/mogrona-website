@@ -1,0 +1,89 @@
+MOGRONA WEBSITE — HOW TO USE AND EDIT
+=====================================
+
+TO VIEW THE SITE
+  Double-click index.html. It opens in your web browser.
+
+THE ONLY FILE YOU NEED TO EDIT
+  js/data.js   (open it with Notepad)
+  All text, products, recipes, blog articles, questions and shops are
+  in that one file, with instructions written inside it.
+
+
+1. ADDING PICTURES
+------------------
+Save each picture into the "images" folder using the exact file name
+below. Any shape or size works: the website crops or fits each picture
+into its frame by itself. Until a picture is added, the site shows a
+"Photo coming soon" panel in its place.
+
+  Logo (top of every page)      images/logo.png
+                                Use a white logo with a transparent
+                                background, because the bar is green.
+  Home page banner picture      images/hero.png
+                                Best with a transparent background.
+  Home page health section      images/home-health.jpg
+  Our Story page                images/story.jpg
+
+  Product pictures              images/products/monk-fruit-sachets-50-1.png  (main picture)
+                                images/products/monk-fruit-sachets-50-2.png
+                                images/products/monk-fruit-sachets-50-3.png
+                                images/products/monk-fruit-sachets-50-4.png
+                                The first two are in place now (cut from
+                                the carton artwork). Replace them with
+                                real product photos when you have them.
+
+  Recipe pictures               images/recipes/karak-chai.jpg
+                                images/recipes/iced-coffee.jpg
+                                images/recipes/mint-lemonade.jpg
+                                images/recipes/mango-lassi.jpg
+                                images/recipes/overnight-oats.jpg
+                                images/recipes/fruit-yogurt-parfait.jpg
+
+  Blog pictures                 images/blog/what-is-monk-fruit.jpg
+                                images/blog/easy-ways-to-cut-sugar.jpg
+                                images/blog/how-to-use-mogrona.jpg
+
+If your picture is a different type (for example .jpg instead of .png),
+either rename it, or change the file name written in js/data.js.
+
+Tip: keep each picture under about 500 KB so pages load quickly.
+
+
+2. ADDING A NEW PRODUCT
+-----------------------
+In js/data.js find the "PRODUCTS" section. Copy the whole product block
+(from its opening { to its closing }), paste it underneath with a comma
+between the two, and change the details and picture names.
+The menu, home page, products page and product page update themselves.
+
+
+3. CONTACT DETAILS, WHATSAPP AND SOCIAL MEDIA
+---------------------------------------------
+In js/data.js, section 1 "COMPANY DETAILS", fill in:
+  email      switches on the contact form
+  phone      shows on the Contact page
+  whatsapp   turns the buy buttons into "Order on WhatsApp"
+  social     adds the links to the bottom of every page
+Anything left empty ("") is simply hidden.
+
+
+4. SHOPS THAT SELL MOGRONA
+--------------------------
+In js/data.js, section 3 "WHERE TO BUY", add one line per shop.
+An example is written there.
+
+
+5. PUTTING THE SITE ONLINE
+--------------------------
+Upload the whole folder (all files and sub-folders) to any web hosting.
+No database or special software is needed.
+
+
+WHAT EACH FILE IS
+-----------------
+  index.html and the other .html files   the pages
+  css/style.css                          colours, fonts and layout
+  js/data.js                             all the content (edit this)
+  js/site.js                             the code that builds the pages (leave alone)
+  images/                                all pictures
