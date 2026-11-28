@@ -21,16 +21,17 @@ export function Wordmark() {
 export function Logo({ eager = false }: { eager?: boolean }) {
   if (imageExists(site.logo)) {
     const size = pngSize(site.logo);
-    const height = 50;
-    const width = size ? Math.round((size.width / size.height) * height) : 125;
+    const height = 56;
+    const width = size ? Math.round((size.width / size.height) * height) : 140;
     return (
       <span className="wordmark wordmark--img">
+        {/* Served as-is (a crisp ~3x PNG, ~30 KB): resizing/compressing the thin script lettering made it look soft. */}
         <Image
           src={publicPath(site.logo)}
           alt={site.name}
           width={width}
           height={height}
-          quality={85}
+          unoptimized
           {...(eager ? { loading: 'eager' as const, fetchPriority: 'high' as const } : {})}
         />
         <small>{site.tagline}</small>
