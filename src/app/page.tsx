@@ -141,7 +141,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <Slot src={firstImage('images/home-health.jpg')} alt="A cup of tea sweetened with Mogrona" className="r-4x3" sizes={SIZES.half} missing="images/home-health.jpg" />
+          <Slot src={firstImage('images/home-health.jpg')} alt="A bright breakfast table with tea and fresh orange slices" className="r-4x3" sizes={SIZES.half} missing="images/home-health.jpg" />
         </div>
       </section>
 

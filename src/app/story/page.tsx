@@ -44,7 +44,7 @@ export default function StoryPage() {
               beautiful valleys in China and blended right here in Pakistan.
             </p>
           </div>
-          <Slot src={firstImage('images/story.jpg')} alt="Fresh monk fruit" className="r-4x3" sizes={SIZES.half} missing="images/story.jpg" />
+          <Slot src={firstImage('images/story.jpg')} alt="A pagoda among green fields and misty mountains in Guilin, China, home of monk fruit" className="r-4x3" sizes={SIZES.half} missing="images/story.jpg" />
         </div>
       </section>
 

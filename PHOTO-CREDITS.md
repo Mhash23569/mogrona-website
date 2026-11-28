@@ -13,5 +13,13 @@ where each picture came from.
 | `public/images/recipes/overnight-oats.jpg` | https://unsplash.com/photos/a-jar-of-food-sitting-on-top-of-a-wooden-table-jQqdHj6oT6k | [Unsplash License](https://unsplash.com/license) |
 | `public/images/recipes/fruit-yogurt-parfait.jpg` | https://unsplash.com/photos/clear-drinking-glass-wg2xU_UNiVc | [Unsplash License](https://unsplash.com/license) |
 
-All photos were cropped to 4:3 for the recipe cards. Product and logo
-artwork is Mogrona's own (carton design revision 9.1).
+| `public/images/blog/easy-ways-to-cut-sugar.jpg` | https://www.pexels.com/photo/spoon-and-sugar-cubes-6545625/ | [Pexels License](https://www.pexels.com/license/) |
+| `public/images/story.jpg` | https://www.pexels.com/photo/traditional-chinese-architecture-in-guilin-33632718/ | [Pexels License](https://www.pexels.com/license/) |
+| `public/images/home-health.jpg` | https://www.pexels.com/photo/orange-slices-cup-and-pitcher-on-table-16425094/ | [Pexels License](https://www.pexels.com/license/) |
+
+Recipe, story and home photos were cropped to 4:3, blog photos to 16:9.
+
+Mogrona's own artwork (carton design revision 9.1) is used for the product
+and logo images and for `public/images/blog/what-is-monk-fruit.jpg` and
+`public/images/blog/how-to-use-mogrona.jpg` (the carton's monk fruit, cup
+and sachet artwork placed on a brand-peach background).
