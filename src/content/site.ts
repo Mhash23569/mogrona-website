@@ -98,7 +98,7 @@ export const site = {
     youtube: '',
   } as Record<string, string>,
 
-  logo: 'images/logo.png', // put the logo file here; until then a text logo is shown
+  logo: 'images/logo.png', // white-lettered logo for the green header and footer (images/logo-green.png is the normal one)
   heroImage: 'images/hero.png', // big picture at the top of the home page; until then the first product picture is used
 
   announcement: 'Quiz: Find your perfect sweet swap',

@@ -21,7 +21,8 @@ WebP) to each visitor's screen. Until a picture is added, the site shows a
 
 | Picture | File |
 | --- | --- |
-| Logo (top of every page) — white logo, transparent background (PNG) | `public/images/logo.png` |
+| Logo (top and bottom of every page) — white lettering, transparent background (PNG) | `public/images/logo.png` |
+| Logo, normal green version (used by Google and for sharing) | `public/images/logo-green.png` |
 | Home page banner picture — best with a transparent background | `public/images/hero.png` |
 | Home page health section | `public/images/home-health.jpg` |
 | Our Story page | `public/images/story.jpg` |

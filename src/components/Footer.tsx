@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { products, site } from '@/content/site';
 import { fullName, href } from '@/lib/format';
-import { Wordmark } from './Header';
+import { Logo } from './Header';
 
 export function Footer() {
   const social = Object.entries(site.social).filter(([, url]) => url);
@@ -10,7 +10,7 @@ export function Footer() {
       <div className="wrap">
         <div className="footer__grid">
           <div className="footer__about">
-            <Wordmark />
+            <Logo />
             <p>
               <b>Marketed by</b>
               <br />

@@ -123,6 +123,10 @@
   .wordmark { position: relative; display: inline-flex; flex-direction: column; font-family: var(--script); font-size: 2.3rem; line-height: 1; padding-top: 12px; color: #fff; }
   .wordmark .leaf { position: absolute; top: -4px; left: 36%; width: 34px; height: auto; }
   .wordmark small { font-family: var(--display); font-size: .6rem; font-weight: 500; letter-spacing: .28em; color: var(--yellow); text-transform: uppercase; align-self: flex-end; margin-top: 7px; white-space: nowrap; }
+  /* Logo picture (public/images/logo.png) with the tagline under it */
+  .wordmark--img { padding-top: 0; }
+  .logo .wordmark--img img, .wordmark--img img { height: 50px; width: auto; display: block; align-self: flex-start; }
+  .wordmark--img small { margin-top: 1px; margin-right: 8px; letter-spacing: .22em; }
   h2[tabindex="-1"]:focus { outline: none; }
 
   .nav__list { display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0; }

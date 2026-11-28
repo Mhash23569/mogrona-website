@@ -60,7 +60,7 @@ export function organizationLd() {
     name: site.name,
     legalName: site.company,
     url: SITE_URL,
-    logo: abs('/icon.svg'),
+    logo: abs('/images/logo-green.png'),
     slogan: 'Natural Sugar Replacement',
     description:
       'Mogrona is a premium zero-calorie monk fruit sweetener from Pakistan. One 1.5 g sachet equals two teaspoons of sugar. No stevia, plant based, gluten free and halal.',

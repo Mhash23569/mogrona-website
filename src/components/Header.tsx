@@ -17,13 +17,25 @@ export function Wordmark() {
   );
 }
 
-function Logo() {
-  // Real logo file, if one has been added to public/images; otherwise the text wordmark.
+/** Logo (white lettering for the green header and footer) with the tagline under it; text wordmark if the file is missing. */
+export function Logo({ eager = false }: { eager?: boolean }) {
   if (imageExists(site.logo)) {
     const size = pngSize(site.logo);
-    const height = 54;
-    const width = size ? Math.round((size.width / size.height) * height) : 160;
-    return <Image src={publicPath(site.logo)} alt={site.name} width={width} height={height} loading="eager" />;
+    const height = 50;
+    const width = size ? Math.round((size.width / size.height) * height) : 125;
+    return (
+      <span className="wordmark wordmark--img">
+        <Image
+          src={publicPath(site.logo)}
+          alt={site.name}
+          width={width}
+          height={height}
+          quality={85}
+          {...(eager ? { loading: 'eager' as const, fetchPriority: 'high' as const } : {})}
+        />
+        <small>{site.tagline}</small>
+      </span>
+    );
   }
   return <Wordmark />;
 }
@@ -43,7 +55,7 @@ export function Header() {
       <header className="header">
         <div className="wrap header__in">
           <Link className="logo" href="/" aria-label={`${site.name} home`}>
-            <Logo />
+            <Logo eager />
           </Link>
           <HeaderNav
             productLinks={products.map((p) => ({ href: href.product(p.id), label: fullName(p) }))}
